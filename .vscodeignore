@@ -1,0 +1,9 @@
+.vscode/**
+bin/**
+node_modules/**
+scripts/**
+source/**
+.editorconfig
+.prettierrc.toml
+generate.js
+jsconfig.json

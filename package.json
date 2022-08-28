@@ -1,0 +1,54 @@
+{
+  "name": "dopamine",
+  "version": "0.0.1",
+  "description": "Awesome Dopamine Theme",
+  "displayName": "Dopamine",
+  "publisher": "Ricardo Brito",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --ext 'yml' --exec node './scripts/build.js'",
+    "build": "node ./scripts/build.js",
+    "package": "node ./scripts/build.js & vsce package --out ./bin/dopamine.vsix"
+  },
+  "maintainers": [
+    "Ricardo <duc-k@mail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duc-k/dopamine.git"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "dopamine",
+    "light",
+    "dark",
+    "theme",
+    "color-theme"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dopamine",
+        "uiTheme": "vs",
+        "path": "./theme/dopamine.json"
+      },
+      {
+        "label": "Dopamine Dark",
+        "uiTheme": "vs-dark",
+        "path": "./theme/dopamine-dark.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "nodemon": "^2.0.19",
+    "tinycolor2": "^1.4.2",
+    "vsce": "^2.10.2"
+  }
+}

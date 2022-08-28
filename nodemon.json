@@ -1,0 +1,9 @@
+{
+  "nodemonConfig": {
+    "watch": ["source"],
+    "ext": "yml",
+    "execMap": {
+      "js": "node"
+    }
+  }
+}
